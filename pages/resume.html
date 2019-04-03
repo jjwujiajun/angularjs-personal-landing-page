@@ -1,0 +1,276 @@
+<div class="container resume">
+    <div class="row">
+        <nav class="col-md-3" id="sidebar">
+            <div class="sidebar affix">
+                <ul class="nav nav-stacked " ng-repeat="section in sections">
+                    <li role="presentation"><a href="#/resume#{{ section }}">{{ section }}</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="resumeText col-md-9" data-spy="scroll" data-target="#sidebar">
+            <section id="{{ sections[0]; }}" class="anchor"></section>
+            <h1>{{ sections[0]; }}</h1>
+            <div class="content" id="workContent">
+                <h2>Product Management Intern</h2>
+                <h3>Liquor.com, Inc. | San Francisco</h3>
+                <ul>
+                    <li>
+                        Rigorously study and interpreted user behaviour on product (website).
+                    </li><li>
+                        Advises director with opinion using concrete analysed results, which helped redirect product roadmap.
+                    </li><li>
+                        Got commended for my granular analytical skills and capability with spreadsheets.
+                    </li>
+                </ul>
+
+                <h2>Detachment Commander, 3rd Sergeant</h2>
+                <h3>21st Artillery Battalion, Singapore Armed Forces</h3>
+                <ul>
+                    <li>
+                        Initiated the battery mess’ revamp by rebranding, re-equipping, and delegating tasks to a team.
+                    </li>
+                    <li>
+                        This increased the enlistees’ visits and improve the battery identity and sense of ownership.
+                    </li>
+                </ul>
+
+                <h2>Human Resource Executive Assistant</h2>
+                <h3>RS Components Inc. | Singapore</h3>
+                <ul>
+                    <li>
+                        Streamlined the personal-files organization system of all employees in South-east Asia.
+                    </li><li>
+                    Received compliments for my attitude and diligence at work. <a href="#/testimonial">See testimonial.</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <section id="{{ sections[1]; }}" class="anchor"></section>
+            <h1>{{ sections[1]; }}</h1>
+            <div class="content" id="ccaContent">
+                <h2>Vice-Programs Director</h2>
+                <h3>ISE Orientation Camp 2013 | National University of Singapore</h3>
+                <ul>
+                    <li>
+                        Restructured the committee by decentralising responsibilities, thereby greatly improving productivity.
+                    </li><li>
+                        Proactively collaborated with other directors to ensure the programme’s administrative feasibility.
+                    </li><li>
+                        Assisted individual sub-heads when necessary in planning their programmes effectively
+                    </li>
+                </ul>
+
+                <h2>Internal Relations Officer</h2>
+                <h3>Carnival for Children’s Cancer Foundation | Project Vibrant Colors</h3>
+                <ul>
+                    <li>
+                        Spearheaded the charity event with nine like-minded friends and raised $5000, the most successful campaign of 20 teams in Project Vibrant Colours.
+                    </li>
+                    <li>
+                        Negotiated with Nanyang Junior College management for resources and funding. Received $500 cash funding, facilities and equipment support.
+                    </li>
+                    <li>
+                        Coordinated more than 20 carnival volunteering teams to ensure their operational success.
+                    </li><li>
+                        Oversaw the publicity efforts around the college to increase student’s awareness of event.
+                    </li>
+                </ul>
+            </div>
+            
+            <section id="{{ sections[2]; }}" class="anchor"></section>
+            <h1>{{ sections[2]; }}</h1>
+            <div class="content" id="projectsContent">
+
+                <h2>Reminder app</h2>
+                <h3>iOS</h3>
+                <ul>
+                    <li>Description
+                    </li>
+                </ul>
+            </div>
+            
+            <section id="{{ sections[3]; }}" class="anchor"></section>
+            <h1>{{ sections[3]; }}</h1>
+            <div class="content" id="eduContent">
+                <h2>National University of Singapore </h2>
+                <h3>Bachelor of Engineering (Honors) | Industrial and Systems Engineering</h3>
+                <ul>
+                    <li>Second Upper Class – <a ng-click="shouldShowNusCourse = !shouldShowNusCourse" ng-init="shouldShowNusCourse = false">See NUS course details</a></li>
+                </ul>
+                <div id="courseDetail" ng-show="shouldShowNusCourse">
+                    <table class="table table-condensed courseTable">
+                        <tr>
+                            <td><strong>Module</strong></td>
+                            <td><strong>Grade</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>Mathematics I</td><td>B+<td>
+                        </td><tr>
+                            <td>Mathematics II</td><td>B+<td>
+                        </tr><tr>
+                            <td>Physics I</td><td>B<td>
+                        </tr><tr>
+                            <td>Statics and Mechanics of Materials</td><td>A-<td>
+                        </tr>
+
+                        <tr>
+                            <td>Engineering Professionalism</td><td>B+<td>
+                        </tr><tr>
+                            <td>The Nature of Language</td><td>A-<td>
+                        </tr><tr>
+                            <td>Critical Thinking and Writing</td><td>B<td>
+                        </tr><tr>
+                            <td>Communicating Engineering</td><td>A<td>
+                        </tr>
+
+                        <tr>
+                            <td>Introduction to Statistics</td><td>B+<td>
+                        </tr><tr>
+                            <td>Statistics in Media</td><td>S<td>
+                        </tr><tr>
+                            <td>Probability</td><td>B+<td>
+                        </tr><tr>
+                            <td>Probability Models with Applications</td><td>B+<td>
+                        </tr><tr>
+                            <td>Statistics for Engineering Applications</td><td>A<td>
+                        </tr>
+
+                        <tr>
+                            <td>Introduction to Systems Thinking</td><td>B+<td>
+                        </tr><tr>
+                            <td>Simulation</td><td>B+<td>
+                        </tr>
+
+                        <tr>
+                            <td>Operations Research</td><td>A-<td>
+                        </tr><tr>
+                            <td>Operations Research II</td><td>A-<td>
+                        </tr>
+
+                        <tr>
+                            <td>Quality Engineering</td><td>B<td>
+                        </tr><tr>
+                            <td>Quality Engineering II</td><td>In-progress<td>
+                        </tr>
+
+                        <tr>
+                            <td>Engineering Economy</td><td>B<td>
+                        </tr><tr>
+                            <td>Cost Analysis and Management</td><td>In-progress<td>
+                        </tr>
+
+                        <tr>
+                            <td>Manufacturing Logistics</td><td>B+<td>
+                        </tr>
+
+                        <tr>
+                            <td>Human Factors Engineering</td><td>B-<td>
+                        </tr>
+
+                        <tr>
+                            <td>Programming Methodology</td><td>B+<td>
+                        </tr><tr>
+                            <td>Data Structures and Algorithms</td><td>B<td>
+                        </tr><tr>
+                            <td>Computer Organisation</td><td>In-progress<td>
+                        </tr><tr>
+                            <td>Software Engineering</td><td>B+<td>
+                        </tr>
+
+                        <tr>
+                            <td>Changing Landscapes of Singapore</td><td>S<td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h2>Stanford University &amp; NUS Overseas College</h2>
+                <h3></h3>
+                <ul>
+                    <li>
+                        Technopreneurship Course – <a ng-click="shouldShowStanfordCourse = !shouldShowStanfordCourse" ng-init="shouldShowStanfordCourse = false">See Stanford details</a>
+                    </li>
+                </ul>
+                <div id="courseDetail" ng-show="shouldShowStanfordCourse">
+                    <h3>Stanford courses</h3>
+                    <table class="table table-condensed courseTable">
+                        <tr>
+                            <td><strong>Year</strong></td>
+                            <td><strong>Module</strong></td>
+                            <td><strong>Grade</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>Winter 2015</td>
+                            <td>The Spirit of Entrepreneurship</td>
+                            <td>B+</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Entrepreneurial Thought Leader</td>
+                            <td>S<td>
+                        </tr>
+                        <tr>
+                            <td>Spring 2015</td>
+                            <td>Global Entrepreneurial Marketing</td>
+                            <td>A</td>
+                        </tr>
+                    </table>
+
+                    <h3>NUS Overseas College courses</h3>
+                    <table class="table table-condensed courseTable">
+                        <tr>
+                            <td><strong>Year</strong></td>
+                            <td><strong>Module</strong></td>
+                            <td><strong>Grade</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>Jan 2015</td>
+                            <td>Entrepreneurship Practicum</td>
+                            <td>In-progress</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>Start-up Internship Programme</td>
+                            <td>In-progress</td>
+                        </tr>
+
+                        <tr>
+                            <td>Aug 2015</td>
+                            <td>Start-up Internship Programme</td>
+                            <td>In-progress</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>New Venture Creation</td>
+                            <td>In-progress</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h2>Advanced Level (A-levels) | Singapore-Cambridge General Certificate of Education (GCE)</h2>
+                <h3>Nanyang Junior College, Singapore</h3>
+                <ul>
+                    <li>
+                        Mathematics • Physics • Project Work • Chemistry • Chinese | A • A • A • B • B
+                    </li>
+                </ul>
+            </div>
+            
+            <section id="{{ sections[4]; }}" class="anchor"></section>
+            <h1>{{ sections[4]; }}</h1>
+            <div class="content" id="interestsContent">
+                <p>
+                    I like to spend my free time upgrading myself.  I feel good when I make full use of my time. 
+                    <br/><br/>
+                    My recent interest is in French and programming in iOS. I can now read simple french and create simple iPhone apps.
+                    <br/><br/>
+                    I dare to try new things. I actively joined many activities (softball, contemporary and hip-hop dance) in universities even though I had no prior experiences.
+                    <br />
+                    I believe life is about exploration.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</div>
